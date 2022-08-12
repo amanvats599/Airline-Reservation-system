@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<title>Book Flight Ticket</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="webpage.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+</style>
+<body class="w3-light-grey">
+
+<!-- Navigation Bar -->
+<div class="w3-bar w3-white w3-large">
+  <a href="#" class="w3-bar-item w3-button w3-red w3-mobile"><i class=" w3-margin-right"></i>Air India</a>
+  <a href="#" class="w3-bar-item w3-button w3-mobile">Home</a>
+  <a href="#flights" class="w3-bar-item w3-button w3-mobile">Flights</a>
+  <a href="login.php" class="w3-bar-item w3-button w3-mobile">Login</a>
+  <a href="signup.php" class="w3-bar-item w3-button w3-mobile">Signup</a>
+  <a href="#about" class="w3-bar-item w3-button w3-mobile">About Us</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-mobile">Contact Us</a>
+  <a href="Traveller_details.html" class="w3-bar-item w3-button w3-right w3-light-grey w3-mobile" >Book Now</a>
+</div>
+<!-- Header -->
+<header class="w3-display-container w3-content" style="max-width:1500px;">
+  <img class="w3-image" src="aeroplane.jpg" alt="Flight bg" style="min-width:1000px" width="1500" height="800">
+  <div class="w3-display-left w3-padding w3-col l6 m8">
+    <div class="w3-container w3-red">
+      <h2><i class=" w3-margin-right"></i>Air India</h2>
+    </div>
+    <div class="w3-container w3-white w3-padding-16">
+      <form action="/action_page.php" target="_blank">
+       <label for="flight">Arrival City : </label>
+       <select id="fligts" name="flights">
+             <option value="Delhi">Delhi</option>
+             <option value="Patna">Patna</option>
+             <option value="Ranchi">Ranchi</option>
+             <option value="Ahmedabad">Ahmedabad</option>
+             <option value="Mumbai">Mumbai</option>
+             <option value="Goa">Goa</option>
+             <option value="Pune">Pune</option>
+             <option value="Jaipur">Jaipur</option>
+             <option value="Chennai">Chennai</option>
+             <option value="Bangalore">Bangalore</option>
+       </select>
+       <label for="flight">Departure City : </label>
+       <select id="fligts" name="flights">
+             <option value="Patna">Patna</option>
+             <option value="Delhi">Delhi</option>
+             <option value="Ranchi">Ranchi</option>
+             <option value="Ahmedabad">Ahmedabad</option>
+             <option value="Mumbai">Mumbai</option>
+             <option value="Goa">Goa</option>
+             <option value="Pune">Pune</option>
+             <option value="Jaipur">Jaipur</option>
+             <option value="Chennai">Chennai</option>
+             <option value="Bangalore">Bangalore</option>
+       </select>
+       <br><br>
+        <div class="w3-row-padding" style="margin:0 -16px;">
+          <div class="w3-half w3-margin-bottom">
+            <label><i class="fa fa-calendar-o"></i> Arival Date </label>
+            <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY" name="CheckIn" required>
+          </div>
+          <div class="w3-half">
+            <label><i class="fa fa-calendar-o"></i> Returning Date</label>
+            <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY" name="CheckOut" required>
+          </div>
+        </div>
+        <div class="w3-row-padding" style="margin:8px -16px;">
+          <div class="w3-half w3-margin-bottom">
+            <label><i class="fa fa-male"></i> Adults</label>
+            <input class="w3-input w3-border" type="number" value="1" name="Adults" min="1" >
+          </div>
+          <div class="w3-half">
+            <label><i class="fa fa-child"></i> Kids</label>
+          <input class="w3-input w3-border" type="number" value="0" name="Kids" min="0">
+          </div>
+        </div>
+        <a href="Traveller_details.html"><button class="w3-button w3-dark-grey" type="submit"><i class="fa fa-search w3-margin-right"></i>Search availability</button></a>
+      </form>
+    </div>
+  </div>
+</header>
+
+
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1532px;" id="flights"></div>
+  <div class="w3-container w3-margin-top" id="rooms">
+    <h3>Flights</h3>
+    <p>Make your journey safe and beautiful. We also offers free wi-fi inside flight.</p>
+  </div>
+  
+  <div class="w3-row-padding">
+    <div class="w3-col m3">
+      <label><i class="fa fa-calendar-o"></i> Arival Date</label>
+      <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY">
+    </div>
+    <div class="w3-col m3">
+      <label><i class="fa fa-calendar-o"></i>Returing Date</label>
+      <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY">
+    </div>
+    <div class="w3-col m2">
+      <label><i class="fa fa-male"></i> Adults</label>
+      <input class="w3-input w3-border" type="number" placeholder="1">
+    </div>
+    <div class="w3-col m2">
+      <label><i class="fa fa-child"></i> Kids</label>
+      <input class="w3-input w3-border" type="number" placeholder="0">
+    </div>
+    <div class="w3-col m2">
+      <label><i class="fa fa-search"></i> Search</label>
+      <button class="w3-button w3-block w3-black">Search</button>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-padding-16">
+    <div class="w3-third w3-margin-bottom">
+      <img src="f1.jfif" alt="Aero1" style="width:100%">
+      <div class="w3-container w3-white">
+        <h3>Economy Class</h3>
+        <h6 class="w3-opacity">From ₹2200 to ₹ 6000</h6>
+        <p>Economy Class</p>
+        <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i></p>
+        <button class="w3-button w3-block w3-black w3-margin-bottom">Choose Flight</button>
+      </div>
+    </div>
+    <div class="w3-third w3-margin-bottom">
+      <img src="f1.jfif" alt="aero2" style="width:100%">
+      <div class="w3-container w3-white">
+        <h3>Buisness Class</h3>
+        <h6 class="w3-opacity">From ₹ 12000 to ₹ 35000</h6>
+        <p>Free Foot Massage </p>
+        <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i></p>
+        <button class="w3-button w3-block w3-black w3-margin-bottom">Choose Flight</button>
+      </div>
+    </div>
+  
+  </div>
+
+  <div class="w3-row-padding" id="about">
+    <div class="w3-col l4 12">
+      <h3>About</h3>
+      <h6>We offer great deals and discounts on online tickets booking to your favorite destinations through Air India. Also check the flight schedule, status for your return Patna to Ranchi flight tickets online. New Users Special OFFER -> Use Pomocode ”Anubhav_12” and get Flat 12% OFF (upto Rs.350 OFF ) on your first flight booking.</h6>
+    <p>We accept: <i class="fa fa-credit-card w3-large"></i> <i class="fa fa-cc-mastercard w3-large"></i> <i class="fa fa-cc-amex w3-large"></i> <i class="fa fa-cc-cc-visa w3-large"></i><i class="fa fa-cc-paypal w3-large"></i></p>
+    </div>
+    
+  </div>
+  <div class="w3-panel w3-red w3-leftbar w3-padding-32">
+    <h6><i class="fa fa-info w3-deep-orange w3-padding w3-margin-right"></i> On demand, we can offer toys, babycall, children care, dog equipment, etc.</h6>
+  </div>
+
+  
+  
+ 
+
+  <div class="w3-container w3-padding-32 w3-black w3-opacity w3-card w3-hover-opacity-off" style="margin:32px 0;">
+    <h2>Get the best offers first!</h2>
+    <p>Join our newsletter.</p>
+    <label>E-mail</label>
+    <input class="w3-input w3-border" type="text" placeholder="Your Email address">
+    <button type="button" class="w3-button w3-red w3-margin-top">Subscribe</button>
+  </div>
+
+  <div class="w3-container" id="contact">
+    <h2>Contact Us : </h2>
+    <p>If you have any questions, do not hesitate to ask them.</p>
+    <i class="fa fa-map-marker w3-text-red" style="width:30px"></i> Ranchi, Jharkhand, India.<br>
+    <i class="fa fa-phone w3-text-red" style="width:30px"></i> Phone: +91 6201540614<br>
+    <i class="fa fa-envelope w3-text-red" style="width:30px"> </i> Email: mail@mail.com<br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p><button class="w3-button w3-black w3-padding-large" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-padding-32 w3-black w3-center w3-margin-top">
+  <h5>Find Us On</h5>
+  <div class="w3-xlarge w3-padding-16">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+ 
+</footer>
+
+
+
+</body>
+</html>
